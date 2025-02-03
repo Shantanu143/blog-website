@@ -1,11 +1,18 @@
-import { BackgroundBeamsWithCollisionDemo } from "./components/custom/BackgroundBeamsWithCollisionDemo";
+import { Route, Routes } from "react-router-dom";
 import { NavbarDemo } from "./components/custom/NavbarDemo";
+import Home from "./Pages/Home";
+import { Login } from "./Pages/Login";
+import DashboardHome from "./dashboard/Dashboard";
 
 const App = () => {
   return (
     <>
       <NavbarDemo />
-      <BackgroundBeamsWithCollisionDemo />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<DashboardHome />} />
+      </Routes>
     </>
   );
 };

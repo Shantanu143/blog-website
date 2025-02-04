@@ -1,17 +1,16 @@
 import { Route, Routes } from "react-router-dom";
-import { NavbarDemo } from "./components/custom/NavbarDemo";
-import Home from "./Pages/Home";
 import { Login } from "./Pages/Login";
-import DashboardHome from "./dashboard/Dashboard";
+import { SidebarDemo } from "./components/custom/SidebarDemo";
+import LandingHome from "./Pages/landing/LandingHome";
 
 const App = () => {
   return (
     <>
-      <NavbarDemo />
+    
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<LandingHome />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<DashboardHome />} />
+        <Route path="/dashboard/*" element={<SidebarDemo />} />
       </Routes>
     </>
   );

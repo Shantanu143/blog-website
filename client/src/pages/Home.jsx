@@ -1,8 +1,13 @@
+import FeacturedPost from "../components/FeacturedPost";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div className="h-[10rem]">Home</div>
-  )
-}
+    <>
+      <Header />
+      <FeacturedPost />
+    </>
+  );
+};
 
-export default Home
+export default Home;

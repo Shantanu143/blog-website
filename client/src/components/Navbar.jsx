@@ -4,7 +4,7 @@ const Navbar = () => {
   const [toggele, setToggle] = useState(true);
 
   return (
-    <div className="bg-[#232536] py-5 px-16 text-white">
+    <div className="bg-[#232536] py-1 px-16 text-white">
       <div className="flex items-center justify-between m-5">
         <div>
           {/* <img className="w-5 h-5" src="logo" alt="logo" /> */}
@@ -59,7 +59,7 @@ const Navbar = () => {
               </button>
             </div>
           ) : (
-            <div className="flex flex-col items-center absolute top-20 p-4 gap-2 right-1.5 rounded-2xl  bg-[#232536] ">
+            <div className="flex flex-col items-center absolute top-22 p-4 gap-2 right-1.5 rounded-2xl  bg-[#232536] z-10">
               <a href="/home ">Home</a>
               <a href="/home ">Blog</a>
               <a href="/home ">About us </a>

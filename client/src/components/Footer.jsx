@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
 
       <div className="flex md:flex-row flex-col items-center justify-between m-5">
-        <div className="flex md:flex-row flex-col items-center justify-center gap-1 md:mb-0 mb-5">
+        <div className="flex flex-col md:items-start items-center  gap-1 md:mb-0 mb-5">
           <span className="text-gray-50">Finstreet 118 2561 Fintown</span>
           <span className="text-gray-50">Hello@finsweet.com 020 7993 2905</span>
         </div>

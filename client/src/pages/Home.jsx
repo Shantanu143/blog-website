@@ -1,7 +1,8 @@
 import AboutComponet from "../components/AboutComponet";
 import Authors from "../components/Authors";
 import Catagory from "../components/Catagory";
-import FeacturedPost from "../components/FeacturedPost";
+import FeaturedBrand from "../components/FeaturedBrand";
+import FeacturedPost from "../components/FeaturedPost";
 import Header from "../components/Header";
 import WhyWeStarted from "../components/WhyWeStarted";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Catagory />
       <WhyWeStarted />
       <Authors />
+      <FeaturedBrand />
     </>
   );
 };

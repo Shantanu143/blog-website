@@ -4,6 +4,7 @@ import Catagory from "../components/Catagory";
 import FeaturedBrand from "../components/FeaturedBrand";
 import FeacturedPost from "../components/FeaturedPost";
 import Header from "../components/Header";
+import Testimonials from "../components/Testimonials";
 import WhyWeStarted from "../components/WhyWeStarted";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <WhyWeStarted />
       <Authors />
       <FeaturedBrand />
+      <Testimonials />
     </>
   );
 };

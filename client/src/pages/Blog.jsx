@@ -1,8 +1,13 @@
+import AllPosts from "../components/AllPosts";
+import BlogHeader from "../components/BlogHeader";
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <>
+      <BlogHeader />
+      <AllPosts />
+    </>
+  );
+};
 
-export default Blog
+export default Blog;

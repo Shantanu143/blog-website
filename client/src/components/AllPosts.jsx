@@ -107,13 +107,6 @@ const AllPosts = () => {
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       img: "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
-    {
-      catagory: "Startup",
-      haeding: "How to attract investors for your startup",
-      paragraph:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-      img: "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
   ];
 
   const [currentPage, setCureentPage] = useState(1);
@@ -166,10 +159,11 @@ const AllPosts = () => {
           >
             {"<"} Prev
           </button>
+
           <button
             onClick={handleNext}
             className={`font-bold ${
-              currentPage ? "text-xl opacity-70" : "text-2xl"
+              indexOfLastPost >= post.length ? "text-xl opacity-70" : "text-2xl"
             } `}
           >
             Next {">"}

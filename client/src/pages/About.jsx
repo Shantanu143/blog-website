@@ -1,8 +1,11 @@
+import AboutHeader from "../components/AboutHeader";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <AboutHeader />
+    </div>
+  );
+};
 
-export default About
+export default About;

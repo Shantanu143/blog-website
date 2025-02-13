@@ -1,6 +1,6 @@
 import AllPosts from "../components/AllPosts";
 import BlogHeader from "../components/BlogHeader";
-import Catagory from "../components/Catagory";
+import Category from "../components/Category";
 import JoinOurTeam from "../components/JoinOurTeam";
 
 const Blog = () => {
@@ -8,10 +8,11 @@ const Blog = () => {
     <>
       <BlogHeader />
       <AllPosts />
-      <Catagory />
+      <Category />
       <JoinOurTeam />
     </>
   );
 };
 
 export default Blog;
+ 

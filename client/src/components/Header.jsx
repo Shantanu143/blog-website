@@ -8,10 +8,10 @@ const Header = () => {
         <h2 className="display my-4">
           Step-by-step guide to choosing <br /> great font pairs
         </h2>
-        <p className="my-4 body-1">
+        <p className="my-4 body-1 text-white">
           By <span className="text-[#FFD050]">James West</span> | May 23, 2022
         </p>
-        <p className="my-4 body-1">
+        <p className="my-4 body-1 text-white">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu <br /> fugiat nulla pariatur. Excepteur sint occaecat
           cupidatat non proident.

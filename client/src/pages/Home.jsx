@@ -1,10 +1,12 @@
 import AboutComponet from "../components/AboutComponet";
 import Authors from "../components/Authors";
-import Catagory from "../components/Catagory";
+import Category from "../components/Category";
 import FeaturedBrand from "../components/FeaturedBrand";
 import FeacturedPost from "../components/FeaturedPost";
 import Header from "../components/Header";
-import JoinTeam from "../components/JoinTeam";
+
+import JoinOurTeam from "../components/JoinOurTeam";
+
 import Testimonials from "../components/Testimonials";
 import WhyWeStarted from "../components/WhyWeStarted";
 
@@ -14,12 +16,13 @@ const Home = () => {
       <Header />
       <FeacturedPost />
       <AboutComponet />
-      <Catagory />
+      <Category />
       <WhyWeStarted />
       <Authors />
       <FeaturedBrand />
       <Testimonials />
-      <JoinTeam />
+
+      <JoinOurTeam />
     </>
   );
 };

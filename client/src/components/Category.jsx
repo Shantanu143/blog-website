@@ -1,4 +1,4 @@
-const Catagory = () => {
+const Category = () => {
   return (
     <div className="my-20">
       <h2 className="h2 text-center">Choose A Catagory</h2>
@@ -37,4 +37,4 @@ const Catagory = () => {
   );
 };
 
-export default Catagory;
+export default Category;

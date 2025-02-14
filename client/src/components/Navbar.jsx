@@ -1,7 +1,27 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggele, setToggle] = useState(true);
+
+  const navlinks = [
+    {
+      name: "Home ",
+      link: "/",
+    },
+    {
+      name: "Blog ",
+      link: "/blog",
+    },
+    {
+      name: "About Us",
+      link: "/about",
+    },
+    {
+      name: "Contact Us",
+      link: "/contact",
+    },
+  ];
 
   return (
     <div className="bg-[#232536] py-1 px-16 text-white">
@@ -50,20 +70,22 @@ const Navbar = () => {
 
           {toggele ? (
             <div className="hidden md:flex items-center justify-center gap-4 ">
-              <a href="/home ">Home</a>
-              <a href="/home ">Blog</a>
-              <a href="/home ">About us </a>
-              <a href="/home ">Contact us </a>
+              {navlinks.map((data, index) => (
+                <Link to={data.link} key={index}>
+                  {data.name}
+                </Link>
+              ))}
               <button className="text-black bg-white px-6 py-2 ml-2 border rounded-sm hover:bg-[#232536] hover:text-white hover:border-[#6D6E76] duration-300">
                 Subscribe
               </button>
             </div>
           ) : (
             <div className="flex flex-col items-center absolute top-22 p-4 gap-2 right-1.5 rounded-2xl  bg-[#232536] z-10">
-              <a href="/home ">Home</a>
-              <a href="/home ">Blog</a>
-              <a href="/home ">About us </a>
-              <a href="/home ">Contact us </a>
+              {navlinks.map((data, index) => (
+                <Link to={data.link} key={index}>
+                  {data.name}
+                </Link>
+              ))}
               <button className="text-black bg-white px-6 py-2 ml-2 rounded-sm">
                 Subscribe
               </button>

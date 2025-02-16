@@ -5,7 +5,7 @@ const Header = () => {
         <p className="uppercase font-extralight md:mb-2 my-1">
           Posted on <span className="font-semibold">startup</span>
         </p>
-        <h2 className="display my-4">
+        <h2 className="display my-4 text-white">
           Step-by-step guide to choosing <br /> great font pairs
         </h2>
         <p className="my-4 body-1 text-white">

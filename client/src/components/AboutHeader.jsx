@@ -19,14 +19,14 @@ const AboutHeader = () => {
   return (
     <div className="mx-10 my-20 h-screen">
       <div className="flex items-center justify-center p-5 -mb-20 ">
-        <div className="max-w-xl z-10 bg-white mx-10 p-10">
+        <div className="max-w-xl z-10 bg-white md:mx-10  md:p-10 p-5">
           <span className="uppercase cap-3">About us</span>
           <h2 className="h1 ">
             We are a team of content writers who share their learnings
           </h2>
         </div>
         <div className="max-w-xl">
-          <p className="body-1">
+          <p className="body-1  md:block hidden ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
